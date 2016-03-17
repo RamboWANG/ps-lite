@@ -18,6 +18,7 @@ class Postoffice {
  public:
   /**
    * \brief return the singleton object
+   * 单例模式，得到Postoffice的单例对象。
    */
   static Postoffice* Get() {
     static Postoffice e; return &e;
