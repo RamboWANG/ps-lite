@@ -1,6 +1,8 @@
 #include "ps/ps.h"
 using namespace ps;
 
+// 这个例子是最为关键的。根据这个代码，我们可以将glove中的代码改造为并行模式。
+
 void StartServer() {
   if (!IsServer()) return;
   auto server = new KVServer<float>(0);
